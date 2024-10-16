@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav id="navContainer">
+        <h1>Weather App</h1>
+        <ul id="nav">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="tables.html">Tables</a></li>
+        </ul>
+    </nav>
+    <main id="mainContainer">
+        <form id="locationForm">
+            <label for="location">
+                <input type="text" placeholder="Enter the location..." id="location">
+            </label>
+            <button type="submit">Search</button>
+        </form>
+        <div id="locationWeatherContainer"></div>
+        <div>
+            <canvas id="barChartContainer"></canvas>
+            <canvas id="doughnutChartContainer"></canvas>
+            <canvas id="lineChartContainer"></canvas>
+        </div>
+    </main>
+
+    <script src="indexScript.js"></script>
+</body>
+</html>

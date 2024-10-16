@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Temperature (°C)</th>
+                <th>Feels Like (°C)</th>
+                <th>Weather Description</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyContainer">
+
+        </tbody>
+    </table>
+    <button id="prev-btn">Prev</button>
+    <button id="next-btn">Next</button>
+
+    <div id="chatContainer"></div>
+    <form id="chatForm">
+        <label for="chatInput"><input type="text" id="chatInput"></label>
+        <button type="submit">Send Chat</button>
+    </form>
+
+    <script src="tablesScript.js"></script>
+</body>
+</html>
