@@ -9,7 +9,7 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 let TableList = [];
 
 let currentPage = 1;
-const entriesPerPage = 5;
+const entriesPerPage = 10;
 
 const extractTableInfo = (data) => {
 
