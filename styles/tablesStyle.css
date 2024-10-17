@@ -1,0 +1,115 @@
+body {
+    /* flex-direction: row; */
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+thead {
+    background-color: #3498db;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#chatContainer {
+    height: 80%;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    max-width: 300px;
+    overflow-y: auto;
+    max-height: 300px;
+    scroll-behavior: smooth;
+}
+
+#chatForm {
+    display: flex;
+    margin-top: 1rem;
+}
+
+#chatForm button {
+    height: 50px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+#chatInput {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+#chatForm button {
+    border-radius: 0 4px 4px 0;
+}
+
+.single-msg {
+    border: 2px solid grey;
+    padding: 10px;
+    margin: 10px;
+}
+
+@media (min-width: 768px) {
+    body {
+        flex-direction: row ;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    #navContainer {
+        max-width: 250px;
+        height: 100vh;
+    }
+}
