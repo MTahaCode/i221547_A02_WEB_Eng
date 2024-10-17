@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navStyle.css">
+    <link rel="stylesheet" href="indexStyle.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="navContainer">
@@ -18,13 +20,11 @@
     </nav>
     <main id="mainContainer">
         <form id="locationForm">
-            <label for="location">
-                <input type="text" placeholder="Enter the location..." id="location">
-            </label>
+            <input type="text" placeholder="Enter the location..." id="location">
             <button type="submit">Search</button>
         </form>
         <div id="locationWeatherContainer"></div>
-        <div>
+        <div id="chartContainer">
             <canvas id="barChartContainer"></canvas>
             <canvas id="doughnutChartContainer"></canvas>
             <canvas id="lineChartContainer"></canvas>

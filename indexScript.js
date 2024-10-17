@@ -44,6 +44,7 @@ const setBarChart = (data) => {
         },
         options: {
             responsive: true,
+            aspectRatio: 1.5,
             scales: {
                 x: {
                     title: {
@@ -97,6 +98,7 @@ const setDoughnutChart = (data) => {
         },
         options: {
             responsive: true,
+            aspectRatio: 1.5,
         }
     })
 }
@@ -125,6 +127,7 @@ const setLineChart = (data) => {
         },
         options: {
             responsive: true,
+            aspectRatio: 1.5,
             scales: {
                 x: {
                     title: {
